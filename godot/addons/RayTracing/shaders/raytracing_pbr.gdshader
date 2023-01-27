@@ -1,5 +1,9 @@
 shader_type canvas_item;
 
+// SCREEN_TEXTURE removed in Godot 4 beta 14
+// Need to use this now:
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture;
+
 // 传入统一值
 uniform vec3 camera_position    = vec3(0.0, 0.0, 4.0);  // 传入摄像机的位置
 uniform mat3 camera_rotation    = mat3(1);              // 摄像机的旋转
